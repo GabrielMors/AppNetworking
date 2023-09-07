@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct PersonList {
+struct PersonList: Codable {
     var person: [Person]
 }
 
-struct Person {
+struct Person: Codable {
     var name: String
     var lastName: String
     var phone: String

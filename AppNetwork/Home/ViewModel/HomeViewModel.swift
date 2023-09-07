@@ -9,6 +9,8 @@ import Foundation
 
 class HomeViewModel: NSObject {
     
+    var service: HomeService = HomeService()
+    
     public func fetchRequest() {
         
     }
