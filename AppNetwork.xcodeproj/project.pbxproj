@@ -17,6 +17,7 @@
 		C44527FE2AA9F0D5006F46CC /* AppNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44527FD2AA9F0D5006F46CC /* AppNetworkUITestsLaunchTests.swift */; };
 		C44528102AA9F2D0006F46CC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445280F2AA9F2D0006F46CC /* HomeViewModel.swift */; };
 		C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528112AA9FA9A006F46CC /* HomeService.swift */; };
+		C44528152AAA153F006F46CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528142AAA153F006F46CC /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C44527FD2AA9F0D5006F46CC /* AppNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C445280F2AA9F2D0006F46CC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C44528112AA9FA9A006F46CC /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		C44528142AAA153F006F46CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		C44527D92AA9F0D2006F46CC /* AppNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				C44528132AAA150F006F46CC /* Model */,
 				C445280B2AA9F29E006F46CC /* Home */,
 				C445280A2AA9F290006F46CC /* Resource */,
 				C44527E82AA9F0D5006F46CC /* Info.plist */,
@@ -160,6 +163,14 @@
 				C445280F2AA9F2D0006F46CC /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C44528132AAA150F006F46CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C44528142AAA153F006F46CC /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44528152AAA153F006F46CC /* Person.swift in Sources */,
 				C44527DF2AA9F0D2006F46CC /* HomeViewController.swift in Sources */,
 				C44527DB2AA9F0D2006F46CC /* AppDelegate.swift in Sources */,
 				C44527DD2AA9F0D2006F46CC /* SceneDelegate.swift in Sources */,
