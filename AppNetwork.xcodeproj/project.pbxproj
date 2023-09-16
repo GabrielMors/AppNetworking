@@ -18,6 +18,7 @@
 		C44528102AA9F2D0006F46CC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445280F2AA9F2D0006F46CC /* HomeViewModel.swift */; };
 		C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528112AA9FA9A006F46CC /* HomeService.swift */; };
 		C44528152AAA153F006F46CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528142AAA153F006F46CC /* Person.swift */; };
+		C44DBBEB2AB673B600554EB0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C445280F2AA9F2D0006F46CC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C44528112AA9FA9A006F46CC /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		C44528142AAA153F006F46CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				C445280D2AA9F2AE006F46CC /* Service */,
 				C445280E2AA9F2C3006F46CC /* ViewModel */,
 				C44527DE2AA9F0D2006F46CC /* HomeViewController.swift */,
+				C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				C44528152AAA153F006F46CC /* Person.swift in Sources */,
 				C44527DF2AA9F0D2006F46CC /* HomeViewController.swift in Sources */,
+				C44DBBEB2AB673B600554EB0 /* HomeScreen.swift in Sources */,
 				C44527DB2AA9F0D2006F46CC /* AppDelegate.swift in Sources */,
 				C44527DD2AA9F0D2006F46CC /* SceneDelegate.swift in Sources */,
 				C44528102AA9F2D0006F46CC /* HomeViewModel.swift in Sources */,
