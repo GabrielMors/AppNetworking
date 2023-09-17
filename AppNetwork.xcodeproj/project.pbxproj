@@ -19,6 +19,8 @@
 		C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528112AA9FA9A006F46CC /* HomeService.swift */; };
 		C44528152AAA153F006F46CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44528142AAA153F006F46CC /* Person.swift */; };
 		C44DBBEB2AB673B600554EB0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */; };
+		C44DBBF72AB67A1700554EB0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBF42AB67A1700554EB0 /* CustomTableViewCell.swift */; };
+		C44DBBF82AB67A1700554EB0 /* CustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		C44528112AA9FA9A006F46CC /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		C44528142AAA153F006F46CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		C44DBBF42AB67A1700554EB0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C44528132AAA150F006F46CC /* Model */,
+				C44DBBF32AB67A1700554EB0 /* Cell */,
 				C445280B2AA9F29E006F46CC /* Home */,
 				C445280A2AA9F290006F46CC /* Resource */,
 				C44527E82AA9F0D5006F46CC /* Info.plist */,
@@ -180,6 +185,24 @@
 			isa = PBXGroup;
 			children = (
 				C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C44DBBF32AB67A1700554EB0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C44DBBF42AB67A1700554EB0 /* CustomTableViewCell.swift */,
+				C44DBBF52AB67A1700554EB0 /* Screen */,
+			);
+			name = Cell;
+			path = "../../../Downloads/PrimeiroAppNetworkCurso - Modulo 1/PrimeiroAppNetworkCurso/Cell";
+			sourceTree = "<group>";
+		};
+		C44DBBF52AB67A1700554EB0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -314,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44DBBF82AB67A1700554EB0 /* CustomTableViewCellScreen.swift in Sources */,
 				C44528152AAA153F006F46CC /* Person.swift in Sources */,
 				C44527DF2AA9F0D2006F46CC /* HomeViewController.swift in Sources */,
+				C44DBBF72AB67A1700554EB0 /* CustomTableViewCell.swift in Sources */,
 				C44DBBEB2AB673B600554EB0 /* HomeScreen.swift in Sources */,
 				C44527DB2AA9F0D2006F46CC /* AppDelegate.swift in Sources */,
 				C44527DD2AA9F0D2006F46CC /* SceneDelegate.swift in Sources */,

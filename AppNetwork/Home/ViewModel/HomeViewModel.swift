@@ -5,20 +5,42 @@
 //  Created by Gabriel Mors  on 07/09/23.
 //
 
-import Foundation
+import UIKit
+
+protocol HomeViewModelProtocol: AnyObject {
+    func success()
+    func error(message: String)
+}
 
 class HomeViewModel: NSObject {
     
-    var service: HomeService = HomeService()
+    private var service: HomeService = HomeService()
+    private var personList: [Person] = []
+    private weak var delegate: HomeViewModelProtocol?
+    
+    public func delegate(delegate: HomeViewModelProtocol?) {
+        self.delegate = delegate
+    }
     
     public func fetchRequest() {
-        service.getPersonList { result in
+        service.getPersonList { [weak self] result in
+            guard let self else { return }
             switch result {
             case .success(let success):
-                print(success)
+                personList = success
+                delegate?.success()
             case .failure(let failure):
-                print(failure.errorDescription ?? "")
+                delegate?.error(message: failure.errorDescription ?? "")
             }
         }
     }
+    
+    public var numberOfRowsInSection: Int {
+        return personList.count
+    }
+    
+    func loadCurrentPerson(indexPath: IndexPath) -> Person {
+        return personList[indexPath.row]
+    }
+
 }
