@@ -43,30 +43,31 @@ class HomeService: NSObject {
         }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            if let error {
-                print("ERROR \(#function) DETALHE DO ERRO:\(error.localizedDescription)")
-                completion(.failure(.networkFailure(error)))
-            }
-            
-            guard let data else {
-                completion(.failure(.noData))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completion(.failure(.invalidResponse))
+            DispatchQueue.main.async {
+                if let error {
+                    print("ERROR \(#function) DETALHE DO ERRO:\(error.localizedDescription)")
+                    completion(.failure(.networkFailure(error)))
+                }
                 
-                return
-            }
-            
-            do {
-                let personList: PersonList = try JSONDecoder().decode(PersonList.self, from: data)
-                print("SUCESS -> \(#function)")
-                completion(.success(personList))
-            } catch {
-                print("ERRO -> \(#function)")
-                completion(.failure(.decodingError(error)))
+                guard let data else {
+                    completion(.failure(.noData))
+                    return
+                }
+                
+                guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                    completion(.failure(.invalidResponse))
+                    
+                    return
+                }
+                
+                do {
+                    let personList: PersonList = try JSONDecoder().decode(PersonList.self, from: data)
+                    print("SUCESS -> \(#function)")
+                    completion(.success(personList))
+                } catch {
+                    print("ERRO -> \(#function)")
+                    completion(.failure(.decodingError(error)))
+                }
             }
         }
         task.resume()

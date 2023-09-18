@@ -21,6 +21,7 @@
 		C44DBBEB2AB673B600554EB0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */; };
 		C44DBBF72AB67A1700554EB0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBF42AB67A1700554EB0 /* CustomTableViewCell.swift */; };
 		C44DBBF82AB67A1700554EB0 /* CustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */; };
+		C44DBBFF2AB7DF5600554EB0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C44DBBEA2AB673B600554EB0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		C44DBBF42AB67A1700554EB0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
+		C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		C44527D92AA9F0D2006F46CC /* AppNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				C44DBBFD2AB7DF4800554EB0 /* Service */,
 				C44528132AAA150F006F46CC /* Model */,
 				C44DBBF32AB67A1700554EB0 /* Cell */,
 				C445280B2AA9F29E006F46CC /* Home */,
@@ -205,6 +208,14 @@
 				C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		C44DBBFD2AB7DF4800554EB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 				C44527DD2AA9F0D2006F46CC /* SceneDelegate.swift in Sources */,
 				C44528102AA9F2D0006F46CC /* HomeViewModel.swift in Sources */,
 				C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */,
+				C44DBBFF2AB7DF5600554EB0 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
