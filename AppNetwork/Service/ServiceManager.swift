@@ -29,7 +29,9 @@ class ServiceManager: NetworkLayer {
     
     var session: URLSession = URLSession.shared
     
-    func request<T>(with urlString: String, method: HTTPMethod = .get, decodeType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) where T : Decodable {
+    func request<T>(with endPoint: Endpoint, decodeType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) where T : Decodable {
+        
+        let urlString = baseURL + endPoint.url
         
         guard let url: URL = URL(string: urlString) else {
             completion(.failure(.invalidURL(url: urlString)))
@@ -37,7 +39,7 @@ class ServiceManager: NetworkLayer {
         }
         
         var request = URLRequest(url: url)
-        request.httpMethod = method.rawValue
+        request.httpMethod = endPoint.method.rawValue
         
         let task = session.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
