@@ -51,7 +51,7 @@ class HomeService: NSObject {
     
     func getPersonList(completion: @escaping (Result<[Person],NetworkError>) -> Void) {
         
-        let urlString: String = "https://run.mocky.io/v3/6a5c19b1-376d-455a-890b-42a52aae011b"
+        let urlString: String = "6a5c19b1-376d-455a-890b-42a52aae011b"
         
         let endPoint = Endpoint(url: urlString)
         

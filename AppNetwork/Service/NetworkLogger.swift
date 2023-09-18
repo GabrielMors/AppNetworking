@@ -10,7 +10,7 @@ import Foundation
 struct NetworkLogger {
     
     static func log(request: URLRequest?, response: URLResponse?, data: Data?, error: Error?, verbose: Bool = true) {
-        print("--------- 🚀 START OF REQUEST 🚀 ---------")
+        print("------------------ 🚀 START OF REQUEST 🚀 ------------------")
         
         if let url = request?.url {
             print("Request URL: \(url.absoluteString)")
