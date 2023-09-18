@@ -23,6 +23,7 @@
 		C44DBBF82AB67A1700554EB0 /* CustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */; };
 		C44DBBFF2AB7DF5600554EB0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */; };
 		C44DBC012AB7EA6A00554EB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC002AB7EA6A00554EB0 /* NetworkError.swift */; };
+		C44DBC032AB7EB3500554EB0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC022AB7EB3500554EB0 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C44DBBF62AB67A1700554EB0 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
 		C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		C44DBC002AB7EA6A00554EB0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C44DBC022AB7EB3500554EB0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				C44DBBFE2AB7DF5600554EB0 /* ServiceManager.swift */,
 				C44DBC002AB7EA6A00554EB0 /* NetworkError.swift */,
+				C44DBC022AB7EB3500554EB0 /* HTTPMethod.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				C44527DB2AA9F0D2006F46CC /* AppDelegate.swift in Sources */,
 				C44527DD2AA9F0D2006F46CC /* SceneDelegate.swift in Sources */,
 				C44528102AA9F2D0006F46CC /* HomeViewModel.swift in Sources */,
+				C44DBC032AB7EB3500554EB0 /* HTTPMethod.swift in Sources */,
 				C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */,
 				C44DBC012AB7EA6A00554EB0 /* NetworkError.swift in Sources */,
 				C44DBBFF2AB7DF5600554EB0 /* ServiceManager.swift in Sources */,
