@@ -53,7 +53,7 @@ class HomeService: NSObject {
         
         let urlString: String = "https://run.mocky.io/v3/6a5c19b1-376d-455a-890b-42a52aae011b"
         
-        var endPoint = Endpoint(url: urlString, method: .get, headers: nil, parameters: nil)
+        let endPoint = Endpoint(url: urlString)
         
         ServiceManager.shared.request(with: endPoint, decodeType: PersonList.self) { result in
             switch result {

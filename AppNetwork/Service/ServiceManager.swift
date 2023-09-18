@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ServiceManager: NetworkLayer {
+class ServiceManager {
     
     static var shared: ServiceManager = ServiceManager()
     
@@ -33,6 +33,7 @@ class ServiceManager: NetworkLayer {
     func request<T>(with endpoint: Endpoint, decodeType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) where T : Decodable {
 
         let urlString = baseURL + endpoint.url
+        
         guard let url: URL = URL(string: urlString) else {
             NetworkLogger.logError(error: .invalidURL(url: urlString))
             completion(.failure(.invalidURL(url: urlString)))
@@ -69,6 +70,5 @@ class ServiceManager: NetworkLayer {
         }
         task.resume()
     }
-    
 }
 
