@@ -28,6 +28,7 @@
 		C44DBC072AB8966600554EB0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC062AB8966600554EB0 /* EndPoint.swift */; };
 		C44DBC092AB89EF800554EB0 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC082AB89EF800554EB0 /* RequestBuilder.swift */; };
 		C44DBC0B2AB89F0A00554EB0 /* DefaultRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC0A2AB89F0A00554EB0 /* DefaultRequestBuilder.swift */; };
+		C44DBC0D2AB89F4600554EB0 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DBC0C2AB89F4600554EB0 /* NetworkLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		C44DBC062AB8966600554EB0 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C44DBC082AB89EF800554EB0 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		C44DBC0A2AB89F0A00554EB0 /* DefaultRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestBuilder.swift; sourceTree = "<group>"; };
+		C44DBC0C2AB89F4600554EB0 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				C44DBC062AB8966600554EB0 /* EndPoint.swift */,
 				C44DBC082AB89EF800554EB0 /* RequestBuilder.swift */,
 				C44DBC0A2AB89F0A00554EB0 /* DefaultRequestBuilder.swift */,
+				C44DBC0C2AB89F4600554EB0 /* NetworkLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				C44528122AA9FA9A006F46CC /* HomeService.swift in Sources */,
 				C44DBC012AB7EA6A00554EB0 /* NetworkError.swift in Sources */,
 				C44DBC072AB8966600554EB0 /* EndPoint.swift in Sources */,
+				C44DBC0D2AB89F4600554EB0 /* NetworkLogger.swift in Sources */,
 				C44DBBFF2AB7DF5600554EB0 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
