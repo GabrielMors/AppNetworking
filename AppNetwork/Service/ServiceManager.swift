@@ -9,7 +9,23 @@ import Foundation
 
 class ServiceManager: NetworkLayer {
     
+    // Singleton
     static var shared: ServiceManager = ServiceManager()
+    
+    private var baseURL: String
+    
+    init(baseURL: String? = nil) {
+        
+        if let baseURL {
+            self.baseURL = baseURL
+                        // irá procurar no meu info.plist uma chave "BaseURL" e me retorna o valor
+        } else if let baseURLString = Bundle.main.infoDictionary?["BaseURL"] as? String {
+        // caso ele encontrar o valor, UTILIZE ela
+            self.baseURL = baseURLString
+        } else {
+            self.baseURL = ""
+        }
+    }
     
     var session: URLSession = URLSession.shared
     
