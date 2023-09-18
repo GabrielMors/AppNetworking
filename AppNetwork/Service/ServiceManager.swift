@@ -16,6 +16,7 @@ enum HTTPMethod: String {
 
 protocol NetworkLayer {
     var session: URLSession { get }
+    
     func request<T: Decodable>(with urlString: String, method: HTTPMethod, decodeType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void)
 }
 
@@ -37,6 +38,7 @@ class ServiceManager: NetworkLayer {
         
         let task = session.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
+                
                 if let error {
                     print("ERROR \(#function) Detalhe do erro: \(error.localizedDescription)")
                     completion(.failure(.networkFailure(error)))
@@ -67,6 +69,5 @@ class ServiceManager: NetworkLayer {
         }
         task.resume()
     }
-    
 }
 

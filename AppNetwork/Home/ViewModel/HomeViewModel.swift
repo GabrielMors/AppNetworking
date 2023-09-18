@@ -27,7 +27,7 @@ class HomeViewModel: NSObject {
             guard let self else { return }
             switch result {
             case .success(let success):
-                personList = success.person.map { $0 }
+                personList = success
                 delegate?.success()
             case .failure(let failure):
                 delegate?.error(message: failure.errorDescription ?? "")
